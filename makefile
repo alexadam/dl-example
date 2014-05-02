@@ -1,5 +1,5 @@
 build:
-	gcc -O3 -rdynamic -std=c99 -I. -L. -Wl,-rpath=.  -llib  dle.c -lm  -o dle -ldl
+	gcc -O3 -rdynamic -std=c99 -I. -L. -Wl,-rpath=. dle.c -lm  -o dle -ldl
 
 lib:
 	gcc -Wall -lm -fPIC -c lib.c

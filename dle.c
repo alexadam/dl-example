@@ -7,6 +7,9 @@
 #include <dlfcn.h>
 
 int main(int argc, char **argv) {
+
+	int r = system("make lib");
+
 	void *lib_handle;
 	float (*fn)(char *, int);
 	int x;
